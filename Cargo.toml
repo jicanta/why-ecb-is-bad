@@ -5,3 +5,5 @@ edition = "2024"
 
 [dependencies]
 image = "0.25"
+aes = "0.8"
+cipher = "0.4"
