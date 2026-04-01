@@ -66,6 +66,10 @@ cargo run
 
 This generates all input and encrypted images under `assets/`.
 
+## Note on hardcoded key and IV
+
+The AES key (`mysecretkey12345`) and CBC initialization vector (`randomiv12345678`) are hardcoded constants. This is intentional — the goal is to visualize the structural weakness of ECB mode, not to build production-grade encryption. In real software you would never hardcode a key, and the IV should be randomly generated per encryption and transmitted alongside the ciphertext.
+
 ## Project structure
 
 ```
